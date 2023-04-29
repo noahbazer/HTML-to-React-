@@ -1,6 +1,6 @@
 #character-ratings {
   width: 90%;
-  height: 33vh;
+  min-height: 33vh;
   background-color: white;
   border-radius: 5px;
   margin-top: 20px;
@@ -34,10 +34,14 @@ th {
   font-weight: bold;
 }
 
-tr:nth-child(even) {
+tr.dark {
   background-color: #dddddde1;
 }
-
-tr:nth-child(odd) {
+tr.light {
   background-color: #ffffffe1;
+}
+
+th {
+  background-color: black;
+  color: white;
 }
