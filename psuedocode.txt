@@ -1,0 +1,4 @@
+PROCESS OF LOGIC FOR REACT CARDS:
+- Take information provided in object data
+- Loop through data to create each card and push to array
+- Loop through array to render?
