@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 
-function Header() {
+export default function Header() {
     return (
         <header>
             <h1>Fullmetal Alchemist</h1>
@@ -13,5 +13,3 @@ function Header() {
         </header>
     );
 }
-
-export default Header;
