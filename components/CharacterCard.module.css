@@ -17,13 +17,13 @@
 .cardTitle {
   font-size: 30px;
   color: white;
-  margin: -1px;
+  margin: 0;
 }
 
 .cardSubtitle {
   font-size: 20px;
   color: white;
-  margin: -1px;
+  margin: 0;
 }
 
 .cardTitles {

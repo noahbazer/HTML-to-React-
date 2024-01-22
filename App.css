@@ -17,4 +17,5 @@ body > :first-child {
 
 * {
   font-weight: normal;
+  line-height: 1em;
 }
