@@ -1,5 +1,5 @@
 import React from 'react';
-import characters from '../fma-data.ts';
+import characters from '../data/fma-data.ts';
 import CharacterCard from './CharacterCard';
 import styles from './CharacterCards.module.css';
 

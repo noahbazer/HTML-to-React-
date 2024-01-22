@@ -1,5 +1,5 @@
 import React from "react";
-import { favData } from "../fma-data";
+import { favData } from "../data/fma-data.ts";
 import styles from "./Table.module.css";
 
 const Table = () => (

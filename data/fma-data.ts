@@ -98,20 +98,7 @@ const data: Character[] = [
   },
 ];
 
-type FavCharacter = {
-  name: string;
-  nickName: null | string;
-};
-
-const favNames: FavCharacter[] = [
-  { name: "Alphonse Elrich", nickName: null },
-  { name: "Edward Elrich", nickName: "The Fullmetal Alchemist" },
-  { name: "Riza Hawkeye", nickName: null },
-  { name: "Mj. Armstrong", nickName: null },
-  { name: "Nina", nickName: null },
-];
-
-const favIndices: number[] = [0, 1, 2, 3, 4];
+const favIndices: number[] = [1, 2, 0, 4, 5];
 
 function selectFavorites(characters: Character[], favIndices: number[]): Character[] {
   return favIndices.map(index => characters[index]);
