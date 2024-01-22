@@ -98,13 +98,13 @@ const data: Character[] = [
   },
 ];
 
-const favIndices: number[] = [1, 2, 0, 4, 5];
-
-function selectFavorites(characters: Character[], favIndices: number[]): Character[] {
-  return favIndices.map(index => characters[index]);
+function selectFavorites(characters: Character[]): Character[] {
+  return [...characters]
+    .sort((a, b) => b.votes - a.votes)
+    .slice(0, 5);
 }
 
-const favData = selectFavorites(data, favIndices);
+const favData = selectFavorites(data);
 
 export default data;
 export { favData };
