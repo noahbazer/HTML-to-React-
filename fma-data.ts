@@ -60,7 +60,7 @@ const data: Character[] = [
   {
     name: "Riza Hawkeye",
     nickName: "Hawkeye",
-    skillset: ["Loyal AF, Sniper"],
+    skillset: "Loyal AF, Sniper",
     votes: 95,
     background:
       "Hawkeye is Colonel Mustang's loyal assistant, and one of the strongest non-alchemist characters in the show",
