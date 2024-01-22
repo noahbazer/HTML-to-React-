@@ -19,7 +19,7 @@ const Table = () => (
             key={index}
             className={index % 2 === 0 ? styles.dark : styles.light}
           >
-            <td>{Favcharacter.name}</td>
+            <td>{Favcharacter.name}{Favcharacter.nickName ? `, "${Favcharacter.nickName}"` : ""}</td>
             <td>{Favcharacter.skillset}</td>
             <td>{Favcharacter.votes}</td>
           </tr>

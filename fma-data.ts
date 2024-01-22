@@ -100,38 +100,24 @@ const data: Character[] = [
 
 type FavCharacter = {
   name: string;
-  skillset: string;
-  votes: number;
+  nickName: null | string;
 };
 
-const favData: FavCharacter[] = [
-  {
-    name: "Alfonse Elrich",
-    skillset: "Being Loveable, Alchemy",
-    votes: 110,
-  },
-  {
-    name: "Edward Elrich \"Full Metal Alchemist\"",
-    skillset: "Alchemy, Human Transmutation",
-    votes: 100,
-  },
-  {
-    name: "Hawkeye",
-    skillset: "Sniper, Loyal AF",
-    votes: 95,
-  },
-  {
-    name: "Mj. Armstrong",
-    skillset: "Alchemy, Muscles",
-    votes: 94,
-  },
-  {
-    name: "Nina",
-    skillset: "Loving Dogs, being adorable",
-    votes: 93,
-  },
+const favNames: FavCharacter[] = [
+  { name: "Alphonse Elrich", nickName: null },
+  { name: "Edward Elrich", nickName: "The Fullmetal Alchemist" },
+  { name: "Riza Hawkeye", nickName: null },
+  { name: "Mj. Armstrong", nickName: null },
+  { name: "Nina", nickName: null },
 ];
 
-export default data;
+const favIndices: number[] = [0, 1, 2, 3, 4];
 
+function selectFavorites(characters: Character[], favIndices: number[]): Character[] {
+  return favIndices.map(index => characters[index]);
+}
+
+const favData = selectFavorites(data, favIndices);
+
+export default data;
 export { favData };
