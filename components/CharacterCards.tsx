@@ -8,11 +8,10 @@ import styles from './CharacterCards.module.css';
 //? Alternatively, should it be in a separate file and imported into both CharacterCard.tsx and CharacterCards.tsx?
 export interface Character {
     name: string;
-    age: number;
     imageUrl: string;
-    nickName: string;
+    nickName: string | null;
     background: string;
-    skillSet: string[];
+    skillSet: string;
 }
 
 export interface CharacterCardsProps {

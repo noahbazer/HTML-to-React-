@@ -25,8 +25,11 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "css-modules"
     ],
     "rules": {
+        "css-modules/no-unused-class": [2, { "camelCase": true }],
+        "css-modules/no-undef-class": [2, { "camelCase": true }]
     }
 }
