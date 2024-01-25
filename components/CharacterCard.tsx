@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './CharacterCard.module.css';
-import { Character } from './CharacterCards.tsx';
+import { Character } from './CharacterCards';
 
 interface CharacterCardProps {
   character: Character;

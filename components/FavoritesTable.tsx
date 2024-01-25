@@ -1,5 +1,5 @@
 import React from "react";
-import { favData } from "../data/fma-data.ts";
+import { favData } from "../data/fma-data";
 import styles from "./FavoritesTable.module.css";
 
 export const FavoritesTable = () => (
