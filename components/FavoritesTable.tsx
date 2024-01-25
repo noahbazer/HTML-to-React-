@@ -1,8 +1,8 @@
 import React from "react";
 import { favData } from "../data/fma-data.ts";
-import styles from "./Table.module.css";
+import styles from "./FavoritesTable.module.css";
 
-const Table = () => (
+export const FavoritesTable = () => (
   <>
     <h4 className={styles.charTableH4}>Top Characters</h4>
     <table className={styles.charTable}>
@@ -14,19 +14,17 @@ const Table = () => (
         </tr>
       </thead>
       <tbody>
-        {favData.map((Favcharacter, index) => (
+        {favData.map((favCharacter, index) => (
           <tr
             key={index}
             className={index % 2 === 0 ? styles.dark : styles.light}
           >
-            <td>{Favcharacter.name}{Favcharacter.nickName ? `, "${Favcharacter.nickName}"` : ""}</td>
-            <td>{Favcharacter.skillset}</td>
-            <td>{Favcharacter.votes}</td>
+            <td>{favCharacter.name}{favCharacter.nickName ? `, "${favCharacter.nickName}"` : ""}</td>
+            <td>{favCharacter.skillSet}</td>
+            <td>{favCharacter.votes}</td>
           </tr>
         ))}
       </tbody>
     </table>
   </>
 );
-
-export default Table;

@@ -1,17 +1,17 @@
 type Character = {
   name: string;
-  skillset: string;
+  skillSet: string;
   votes: number;
   imageUrl: string;
   background: string;
   nickName: null | string;
 };
 
-const data: Character[] = [
+export const characterData: Character[] = [
   {
     name: "Alex Louis Armstrong",
     nickName: "Major Armstrong",
-    skillset: "Flawless Bodybuilding, Stone Alchemy",
+    skillSet: "Flawless Bodybuilding, Stone Alchemy",
     votes: 90,
     background:
       "Major Armstrong may look big and strong, but deep down he's the biggest sap in the entire show",
@@ -21,7 +21,7 @@ const data: Character[] = [
   {
     name: "Alphonse Elrich",
     nickName: null,
-    skillset: "Being Loveable, Alchemy",
+    skillSet: "Being Loveable, Alchemy",
     votes: 110,
     background:
       "Alphonse is a walking suit of armor on a quest to find his real body",
@@ -31,7 +31,7 @@ const data: Character[] = [
   {
     name: "Edward Elrich",
     nickName: "The Fullmetal Alchemist",
-    skillset: "Human Transmutation, Alchemy, Being Short",
+    skillSet: "Human Transmutation, Alchemy, Being Short",
     votes: 109,
     background:
       "Edward is a master alchemist and our main character... just don't call him short",
@@ -42,7 +42,7 @@ const data: Character[] = [
     name: "Greed",
     nickName: "Greed",
     votes: 45,
-    skillset: "Skin Hardening, Homunculii",
+    skillSet: "Skin Hardening, Homunculii",
     imageUrl: "https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/08/greed-fullmetal-alchemist.jpg",
     background:
       "Greed is one of the seven deadly sins Homunculii. He's the most 'on our side' of all of them.",
@@ -50,7 +50,7 @@ const data: Character[] = [
   {
     name: "Nina Tucker",
     nickName: null,
-    skillset: "Being Adorable, Combining...",
+    skillSet: "Being Adorable, Combining...",
     votes: 80,
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9dK-tXCnVxbSeSJuCKmiX0zUbnCEV1ss54DeOYgXUHSE0WB23TAUD4a3itwFbzJ9fkg&usqp=CAU",
@@ -60,7 +60,7 @@ const data: Character[] = [
   {
     name: "Riza Hawkeye",
     nickName: "Hawkeye",
-    skillset: "Loyal AF, Sniper",
+    skillSet: "Loyal AF, Sniper",
     votes: 95,
     background:
       "Hawkeye is Colonel Mustang's loyal assistant, and one of the strongest non-alchemist characters in the show",
@@ -71,7 +71,7 @@ const data: Character[] = [
     name: "Solf J. Kimblee",
     nickName: "The Crimson Alchemist",
     votes: -9000,
-    skillset: "Being a piece of sh*t, Alchemy",
+    skillSet: "Being a piece of sh*t, Alchemy",
     background: "Kimblee suckkkkkssss, seriously he's not very nice",
     imageUrl:
       "https://i0.wp.com/news.qoo-app.com/en/wp-content/uploads/sites/3/2022/03/full-metal-alchemist-mobile-char-2.jpg?resize=640%2C457&ssl=1",
@@ -80,7 +80,7 @@ const data: Character[] = [
     name: "Tim Marcoh",
     nickName: "Dr. Marcoh",
     votes: 40,
-    skillset: "Healing Alchemy, Making Philospher Stones",
+    skillSet: "Healing Alchemy, Making Philospher Stones",
     background:
       "Dr. Marcoh did some F**ked up S**t in the war on ishval, but his redemption arc is strong",
     imageUrl:
@@ -90,7 +90,7 @@ const data: Character[] = [
     name: "Winrey Rockbell",
     nickName: null,
     votes: 93,
-    skillset: "Automail Expert, Delivering Babies",
+    skillSet: "Automail Expert, Delivering Babies",
     background:
       "Winrey is Edward and Al's best friend, and it's a good thing because her specialty is making the best automail out there",
     imageUrl:
@@ -104,7 +104,4 @@ function selectFavorites(characters: Character[]): Character[] {
     .slice(0, 5);
 }
 
-const favData = selectFavorites(data);
-
-export default data;
-export { favData };
+export const favData = selectFavorites(characterData);
